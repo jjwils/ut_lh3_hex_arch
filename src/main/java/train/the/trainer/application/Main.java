@@ -1,4 +1,8 @@
-package train.the.trainer;
+package train.the.trainer.application;
+
+import train.the.trainer.adapter.out.ConsolePrinter;
+import train.the.trainer.adapter.out.FizzBuzz;
+import train.the.trainer.domain.Program;
 
 public class Main {
 

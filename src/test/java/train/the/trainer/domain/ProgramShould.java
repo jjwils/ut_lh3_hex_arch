@@ -1,6 +1,8 @@
-package train.the.trainer;
+package train.the.trainer.domain;
 
 import org.junit.jupiter.api.Test;
+import train.the.trainer.application.port.TestDoubleConvertor;
+import train.the.trainer.application.port.TestDoublePrinter;
 
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

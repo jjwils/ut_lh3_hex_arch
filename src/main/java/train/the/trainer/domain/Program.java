@@ -1,4 +1,7 @@
-package train.the.trainer;
+package train.the.trainer.domain;
+
+import train.the.trainer.application.port.Convertor;
+import train.the.trainer.application.port.Printer;
 
 public class Program {
     private final Printer printer;

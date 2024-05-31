@@ -1,4 +1,6 @@
-package train.the.trainer;
+package train.the.trainer.adapter.out;
+
+import train.the.trainer.application.port.Convertor;
 
 public class FizzBuzz implements Convertor {
     public String convert(int number) {

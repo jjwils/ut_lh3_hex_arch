@@ -1,4 +1,6 @@
-package train.the.trainer;
+package train.the.trainer.application.port;
+
+import train.the.trainer.application.port.Convertor;
 
 public class TestDoubleConvertor implements Convertor {
 
