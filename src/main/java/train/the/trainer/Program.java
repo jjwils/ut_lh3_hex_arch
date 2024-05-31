@@ -2,9 +2,9 @@ package train.the.trainer;
 
 public class Program {
     private final Printer printer;
-    private final TestConvertor testConvertor;
+    private final Convertor testConvertor;
 
-    public Program(Printer printer, TestConvertor testConvertor) {
+    public Program(Printer printer, Convertor testConvertor) {
         this.printer = printer;
         this.testConvertor = testConvertor;
     }

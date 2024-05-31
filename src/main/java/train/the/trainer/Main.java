@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Program program = new Program(new ConsolePrinter(), new TestConvertor());
-        program.printNumbers(2);
+        Program program = new Program(new ConsolePrinter(), new FizzBuzz());
+        program.printNumbers(100);
     }
 }

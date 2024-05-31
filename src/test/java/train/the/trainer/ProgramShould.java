@@ -13,7 +13,7 @@ public class ProgramShould {
     void print_numbers(){
 
         TestDoublePrinter testDoublePrinter = new TestDoublePrinter();
-        Program program = new Program(testDoublePrinter, new TestConvertor());
+        Program program = new Program(testDoublePrinter, new TestDoubleConvertor());
 
         program.printNumbers(2);
 
@@ -24,14 +24,14 @@ public class ProgramShould {
     void render_converted_numbers(){
 
 
-        TestConvertor testConvertor = new TestConvertor();
+        TestDoubleConvertor testDoubleConvertor = new TestDoubleConvertor();
 
-        Program program = new Program(new TestDoublePrinter(), testConvertor);
+        Program program = new Program(new TestDoublePrinter(), testDoubleConvertor);
 
         program.printNumbers(1);
 
 
-        assertEquals("1x", testConvertor.rendered());
+        assertEquals("1x", testDoubleConvertor.rendered());
 
 
 

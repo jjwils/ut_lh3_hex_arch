@@ -1,6 +1,6 @@
 package train.the.trainer;
 
-public class FizzBuzz {
+public class FizzBuzz implements Convertor {
     public String convert(int number) {
         if (number % 3 == 0 && number % 5 == 0) {
             return "FizzBuzz";
