@@ -1,6 +1,7 @@
 package train.the.trainer;
 
 import org.junit.jupiter.api.Test;
+import train.the.trainer.domain.FizzBuzz;
 
 import static org.junit.jupiter.api.Assertions.*;
 
