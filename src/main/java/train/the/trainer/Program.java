@@ -2,16 +2,16 @@ package train.the.trainer;
 
 public class Program {
     private final Printer printer;
-    private final TestConvertor testConvertor;
+    private final TestDoubleConvertor testDoubleConvertor;
 
-    public Program(Printer printer, TestConvertor testConvertor) {
+    public Program(Printer printer, TestDoubleConvertor testDoubleConvertor) {
         this.printer = printer;
-        this.testConvertor = testConvertor;
+        this.testDoubleConvertor = testDoubleConvertor;
     }
 
     public void printNumbers(int amountToPrint) {
         for (int i = 1; i <= amountToPrint; i++) {
-            printer.print(testConvertor.convert(i));
+            printer.print(testDoubleConvertor.convert(i));
         }
 
     }

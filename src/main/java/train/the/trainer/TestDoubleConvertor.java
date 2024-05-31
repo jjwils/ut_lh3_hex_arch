@@ -1,6 +1,6 @@
 package train.the.trainer;
 
-public class TestConvertor {
+public class TestDoubleConvertor {
 
 
     private String rendered;
