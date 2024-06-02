@@ -1,9 +1,10 @@
 package train.the.trainer;
 
 public class Program {
-    private Printer printer = new Printer();
-
-    public void printNumbers(int amountToPrint) {
-        printer.print("x");
+    FizzBuzz fizzBuzz = new FizzBuzz();
+    void printNumbers(int number) {
+        for (int i = 1; i <= number; i++) {
+            System.out.println(fizzBuzz.convert(i));
+        }
     }
 }
