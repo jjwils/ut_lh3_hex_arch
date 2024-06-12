@@ -8,16 +8,16 @@ import train.the.trainer.application.port.TestDoublePrinter;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class ProgramShould {
+public class NumberRendererShould {
 
 
     @Test
     void print_numbers(){
 
         TestDoublePrinter testDoublePrinter = new TestDoublePrinter();
-        Program program = new Program(testDoublePrinter, new TestDoubleConvertor());
+        NumberRenderer numberRenderer = new NumberRenderer(testDoublePrinter, new TestDoubleConvertor());
 
-        program.printNumbers(2);
+        numberRenderer.printNumbers(2);
 
         assertEquals(2, testDoublePrinter.count());
     }
@@ -28,9 +28,9 @@ public class ProgramShould {
 
         TestDoubleConvertor testDoubleConvertor = new TestDoubleConvertor();
 
-        Program program = new Program(new TestDoublePrinter(), testDoubleConvertor);
+        NumberRenderer numberRenderer = new NumberRenderer(new TestDoublePrinter(), testDoubleConvertor);
 
-        program.printNumbers(1);
+        numberRenderer.printNumbers(1);
 
 
         assertEquals("1x", testDoubleConvertor.rendered());

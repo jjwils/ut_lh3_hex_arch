@@ -3,18 +3,18 @@ package train.the.trainer.domain;
 import train.the.trainer.application.port.Convertor;
 import train.the.trainer.application.port.Printer;
 
-public class Program {
+public class NumberRenderer {
     private final Printer printer;
-    private final Convertor testConvertor;
+    private final Convertor convertor;
 
-    public Program(Printer printer, Convertor testConvertor) {
+    public NumberRenderer(Printer printer, Convertor convertor) {
         this.printer = printer;
-        this.testConvertor = testConvertor;
+        this.convertor = convertor;
     }
 
     public void printNumbers(int amountToPrint) {
         for (int i = 1; i <= amountToPrint; i++) {
-            printer.print(testConvertor.convert(i));
+            printer.print(convertor.convert(i));
         }
 
     }
