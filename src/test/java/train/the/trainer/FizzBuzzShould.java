@@ -2,9 +2,7 @@ package train.the.trainer;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
-class FizzBuzzTest {
+class FizzBuzzShould {
 
     @Test
     void return_1_given_1() {
