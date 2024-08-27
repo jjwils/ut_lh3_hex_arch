@@ -9,8 +9,10 @@ public class Program {
     }
 
     public void printNumbers(int amountToPrint) {
-        printer.print("x");
-        printer.print("x");
+       FizzBuzz fizzBuzz = new FizzBuzz();
+        for (int i = 0; i < amountToPrint; i++) {
+            printer.print(fizzBuzz.convert(i + 1));
+        }
 
     }
 }

@@ -9,7 +9,7 @@ public class ProgramShould {
     void print_numbers(){
 
         //given
-        Printer printer = new Printer();
+        TestDoublePrinter printer = new TestDoublePrinter();
         Program program = new Program(printer);
 
         //when

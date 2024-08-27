@@ -1,16 +1,5 @@
 package train.the.trainer;
 
-public class Printer {
-
-
-    private int count;
-
-
-    public void print(String output){
-         count++;
-    }
-
-    public int count() {
-        return count;
-    }
+public interface Printer {
+    void print(String output);
 }
