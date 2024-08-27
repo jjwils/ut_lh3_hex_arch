@@ -21,6 +21,14 @@ Fizz
 FizzBuzz
 ... etc up to 100
 
-## Step 2
+## Step 3
 
-Lets write a decoupled version to print the numbers.
+Now we have a test double lets create an interface (port) from that so we can create our real implementation (adaptor)
+
+Use the Refactor->Extract Interface option and choose to ```Rename original class and use interface where possible```
+
+What members do you want to take forward to into the new interface?
+
+```void print(String output)```?  
+```int count() ```?  
+or both?
