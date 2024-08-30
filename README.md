@@ -25,4 +25,6 @@ FizzBuzz
 
 Write some code in the class ```Program``` to complete the spec above to loop and print the output of 100 iterations of the FizzBuzz wordgame.  Note the logic for the conversion is already completed in the class ```FizzBuzz```
 
+Now move onto branch step_2
+
 
