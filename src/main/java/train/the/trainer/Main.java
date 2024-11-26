@@ -1,9 +1,15 @@
 package train.the.trainer;
 
+import java.math.BigDecimal;
+
 public class Main {
 
     public static void main(String[] args) {
-        Program program = new Program();
-        program.printNumbers(100);
+        Basket basket = new Basket();
+        basket.add(new Product("Apple", new BigDecimal("0.50")));
+        basket.add(new Product("Orange", new BigDecimal("0.50")));
+
+        basket.printReceipt(2);
+
     }
 }
