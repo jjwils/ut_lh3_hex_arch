@@ -6,6 +6,11 @@ import java.util.List;
 
 public class Basket {
     private final List<Product> items = new ArrayList<>();
+    private final Printer printer;
+
+    public Basket(Printer printer) {
+        this.printer = printer;
+    }
 
     public int size() {
         return items.size();
@@ -31,8 +36,9 @@ public class Basket {
         return total;
     }
 
-    public void printReceipt(int numberOfCopies){
-        //TODO
-
+    public void printReceipt(int numberOfCopies) {
+        for (int i = 0; i < numberOfCopies; i++) {
+            printer.print(ReceiptFormatter.itemisedAndTotal(this));
+        }
     }
 }

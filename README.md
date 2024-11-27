@@ -23,26 +23,28 @@ Total: 1.48
 ```
 
 
-## Step 2
+## Step 3
 
 
-Now write version that will (eventually) print the receipts but is decoupled from accidental complexity of the external world (I/O).
+Now we have a test double lets create an interface (port) from that so we can create our real implementation (adaptor) and get some output when we run Main
 
-The class ```ShoppingBasketShould``` contains a test that is failing to compile. 
+On the current Printer class Use the Refactor->Extract Interface option and choose to 2nd radio button Rename original class and use interface where possible
 
-Generate (**⌥ Option + ⏎ Enter**) from the test your own test double spy called ```Printer``` which should contain a method with the signature ```void print(String output)```  
+What would be a good name to Rename Printer to?
 
-Create a count variable to record how many times the print method is invoked and return it via ```int count()``` 
+What members do you want to take forward to into the new interface?
 
-**_Note there should be no calls to System.out in ```Printer```_**
+```void print(String output)``` ?  
+```int count()``` ?  
+or both?
 
-```ShoppingBasketShould.print_receipts``` should now be compiling but failing
+Once the new interface is created, run the ```ShoppingBasketShould``` tests again to check that this is a genuine refactor (all tests still pass).
 
-Call ```printReceipt``` in ```Basket``` the correct number of times until the ```ShoppingBasketShould``` test passes.
+Now go to Main and create a new Printer to inject into ```Basket(yourNewRealPrinter)```
 
-Now run ```Main```
+You should now have two implementations (adapters) for your Printer interface (port). One injected into ```Basket``` for the test (```ShoppingBasketShould.printReceipt```) and one injected into ```Basket``` for Production (```Main```).
 
-What do you notice about the output now when you run Main?  How has this changed from the previous output in step_1?
+Make any further changes you need to in ``Basket.printReceipt`` to get the output as defined in the spec above.
 
-Now move onto branch basket_step_3
+Hint...you can find the complete solution in branch step_4.
 

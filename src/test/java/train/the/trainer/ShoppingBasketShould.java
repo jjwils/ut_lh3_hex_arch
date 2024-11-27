@@ -17,7 +17,7 @@ public class ShoppingBasketShould {
     @BeforeEach
     void setUp() {
 
-        basket = new Basket();
+        basket = new Basket(new Printer());
 
     }
 
