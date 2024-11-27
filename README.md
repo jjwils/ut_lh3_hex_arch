@@ -40,11 +40,15 @@ or both?
 
 Once the new interface is created, run the ```ShoppingBasketShould``` tests again to check that this is a genuine refactor (all tests still pass).
 
-Now go to Main and create a new Printer to inject into ```Basket(yourNewRealPrinter)```
+Now move ```TestDoublePrinter``` or whatever you called your test double printer to the test package.  
+
+```Main``` should now be failing to compile.  
+
+Create a new dependency to inject into ```Basket``` that implements ```Printer``` that will be used to print the receipt to the output window.  Give it an appropriate name such as ```ConsolePrinter```.
 
 You should now have two implementations (adapters) for your Printer interface (port). One injected into ```Basket``` for the test (```ShoppingBasketShould.printReceipt```) and one injected into ```Basket``` for Production (```Main```).
 
-Make any further changes you need to in ``Basket.printReceipt`` to get the output as defined in the spec above.
+Make any further changes you need to in ```Basket.printReceipt``` to get the output to show in the console window as defined in the spec above.
 
 Hint...you can find the complete solution in branch step_4.
 
