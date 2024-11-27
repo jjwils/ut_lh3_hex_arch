@@ -48,7 +48,7 @@ Create a new dependency to inject into ```Basket``` that implements ```Printer``
 
 You should now have two implementations (adapters) for your Printer interface (port). One injected into ```Basket``` for the test (```ShoppingBasketShould.printReceipt```) and one injected into ```Basket``` for Production (```Main```).
 
-Make any further changes you need to in ```Basket.printReceipt``` to get the output to show in the console window as defined in the spec above.
+Make any further changes you need to in ```Basket.printReceipt``` to get the output to show in the console window as defined in the spec above.  Note, the logic for the correct formatting can be found in ```ReceiptFormatter```. 
 
 Hint...you can find the complete solution in branch step_4.
 
