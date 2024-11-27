@@ -25,6 +25,23 @@ Total: 1.48
 
 ## Step 1 
 
-Write some code in the class ```Basket``` to complete the spec above to print the receipt to the screen (the specified number of times).  Note the logic for the basket and formatting an individual receipt is already completed in the classes ```Basket``` & ```ReceiptFormatter```
+You'll find some code in the class ```Basket``` that prints the receipt to the screen (the specified number of times).
+
+Run ```Main``` and check the output.
+
+Does the output match the sample output in the spec above?
+
+Run ```ShoppingBasketShould``` with coverage.  What do you notice about the line coverage in ```Basket```?
+
+Use Cody to generate a unit test for the ```printReceipt``` method.
+
+What kind of tests does it create?
+
+What could be the problems with the test code and the production code?  
+
+What if I wanted to print the receipt to a real printer?
+
+What if I wanted to print the receipt to a real printer and email it to someone at the same time?
 
 
+Now move onto branch basket_step_2
