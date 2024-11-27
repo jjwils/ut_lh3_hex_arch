@@ -17,7 +17,7 @@ public class ShoppingBasketShould {
     @BeforeEach
     void setUp() {
 
-        basket = new Basket(new Printer());
+        basket = new Basket(new TestDoublePrinter());
 
     }
 
@@ -96,7 +96,7 @@ public class ShoppingBasketShould {
     void print_receipts(){
 
         //given
-        Printer printer = new Printer();
+        TestDoublePrinter printer = new TestDoublePrinter();
         Basket basket = new Basket(printer);
 
         //when
