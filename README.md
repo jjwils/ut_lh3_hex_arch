@@ -26,15 +26,23 @@ Total: 1.48
 ## Step 2
 
 
-Now write version that print the receipts but is decoupled from the external world (I/O).
+Now write version that will (eventually) print the receipts but is decoupled from accidental complexity of the external world (I/O).
 
-The class ```ShoppingBasketShould``` contains a test that is failing to compile. Create your own test double spy Printer which should have a method void print(String output) Create a count variable to record how many times the print method is invoked and return it via the int count() **_Note there should be no calls to System.out in ```Printer```_**
+The class ```ShoppingBasketShould``` contains a test that is failing to compile. 
+
+Generate (**⌥ Option + ⏎ Enter**) from the test your own test double spy called ```Printer``` which should contain a method with the signature ```void print(String output)```  
+
+Create a count variable to record how many times the print method is invoked and return it via ```int count()``` 
+
+**_Note there should be no calls to System.out in ```Printer```_**
+
+```ShoppingBasketShould.print_receipts``` should now be compiling but failing
 
 Call ```printReceipt``` in ```Basket``` the correct number of times until the ```ShoppingBasketShould``` test passes.
 
 Now run ```Main```
 
-What do you notice about the output when you run Main?
+What do you notice about the output now when you run Main?  How has this changed from the previous output in step_1?
 
 Now move onto branch basket_step_3
 
