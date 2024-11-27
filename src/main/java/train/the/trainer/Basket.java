@@ -32,9 +32,7 @@ public class Basket {
     }
 
     public void printReceipt(int numberOfCopies){
-        for (int i = 0; i < numberOfCopies; i++) {
-            System.out.println(ReceiptFormatter.itemisedAndTotal(this));
-        }
+        //TODO
 
     }
 }

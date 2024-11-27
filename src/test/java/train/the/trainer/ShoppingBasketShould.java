@@ -91,4 +91,18 @@ public class ShoppingBasketShould {
         assertEquals(new BigDecimal("0.99"), basket.priceTotal());
 
     }
+
+    @Test
+    void print_receipts(){
+
+        //given
+        Printer printer = new Printer();
+        Basket basket = new Basket(printer);
+
+        //when
+        basket.printReceipt(2);
+
+        //then
+        assertEquals(2, printer.count());
+    }
 }

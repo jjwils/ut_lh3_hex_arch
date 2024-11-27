@@ -23,8 +23,18 @@ Total: 1.48
 ```
 
 
-## Step 1 
+## Step 2
 
-Write some code in the class ```Basket``` to complete the spec above to print the receipt to the screen (the specified number of times).  Note the logic for the basket and formatting an individual receipt is already completed in the classes ```Basket``` & ```ReceiptFormatter```
 
+Now write version that print the receipts but is decoupled from the external world (I/O).
+
+The class ```ShoppingBasketShould``` contains a test that is failing to compile. Create your own test double spy Printer which should have a method void print(String output) Create a count variable to record how many times the print method is invoked and return it via the int count() **_Note there should be no calls to System.out in ```Printer```_**
+
+Call ```printReceipt``` in ```Basket``` the correct number of times until the ```ShoppingBasketShould``` test passes.
+
+Now run ```Main```
+
+What do you notice about the output when you run Main?
+
+Now move onto branch basket_step_3
 
